@@ -18,6 +18,20 @@ public abstract class Activity implements Serializable {
      */
     private String activityDescription;
     /**
+     * Constructor with arguments
+     * <p>
+     *     Sets up the object
+     * </p>
+     * @param ID is for the activityID
+     * @param name is for the activityName
+     * @param desc is for the activityDescription
+     */
+    public Activity(long ID, String name, String desc) {
+        activityID = ID;
+        activityName = name;
+        activityDescription = desc;
+    }
+    /**
      * Function definition for getActivityID()
      * <P>
      *     Gets the activityID for the activity
