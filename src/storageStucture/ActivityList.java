@@ -46,4 +46,34 @@ public class ActivityList implements Serializable {
         listName = name;
         activities = new ArrayList<>();
     }
+    /**
+     * Function definition for getListID()
+     * <p>
+     *     Return the listID
+     * </p>
+     * @return listID
+     */
+    public long getListID() {
+        return listID;
+    }
+    /**
+     * Function definition for getListName()
+     * <P>
+     *     Return the listName
+     * </P>
+     * @return listName
+     */
+    public String getListName() {
+        return listName;
+    }
+    /**
+     * Function definition for getActivities()
+     * <P>
+     *     Returns the activities
+     * </P>
+     * @return activities
+     */
+    public ArrayList<Activity> getActivities() {
+        return activities;
+    }
 }
