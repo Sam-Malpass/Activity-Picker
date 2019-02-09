@@ -6,6 +6,10 @@ package storageStucture;
 import java.io.Serializable;
 public abstract class Activity implements Serializable {
     /**
+     * serialVersionUID allows the class to implement serialised
+     */
+    public static final long serialVersionUID = 1L;
+    /**
      * activityID holds the ID of the activity
      */
     private long activityID;
@@ -30,6 +34,17 @@ public abstract class Activity implements Serializable {
         activityID = ID;
         activityName = name;
         activityDescription = desc;
+    }
+    /**
+     * Constructor with no arguments
+     * <p>
+     *     Sets up the object
+     * </p>
+     */
+    public Activity() {
+        activityID = 1L;
+        activityName = null;
+        activityDescription = null;
     }
     /**
      * Function definition for getActivityID()
