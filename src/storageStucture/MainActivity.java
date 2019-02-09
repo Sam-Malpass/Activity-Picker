@@ -37,4 +37,14 @@ public class MainActivity extends Activity {
         super(ID, name, desc);
         subOptions = subs;
     }
+    /**
+     * Function definition for getSubOptions()
+     * <p>
+     *     Return the subOptions
+     * </p>
+     * @return subOptions
+     */
+    public ArrayList<String> getSubOptions() {
+        return subOptions;
+    }
 }
