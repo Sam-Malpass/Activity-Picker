@@ -22,4 +22,28 @@ public class ActivityList implements Serializable {
      * activities holds a list of Activity objects
      */
     private ArrayList<Activity> activities;
+    /**
+     * Constructor with no arguments
+     * <p>
+     *     Sets up the object
+     * </p>
+     */
+    public ActivityList() {
+        listID = 1L;
+        listName = null;
+        activities = null;
+    }
+    /**
+     * Constructor with arguments
+     * <p>
+     *     Sets up the object using passed values
+     * </p>
+     * @param ID is for the listID
+     * @param name is for the listName
+     */
+    public ActivityList(long ID, String name) {
+        listID = ID;
+        listName = name;
+        activities = new ArrayList<>();
+    }
 }
