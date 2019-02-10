@@ -76,4 +76,12 @@ public class ActivityList implements Serializable {
     public ArrayList<Activity> getActivities() {
         return activities;
     }
+
+    public ArrayList<String> listActivities() {
+        ArrayList<String> tmp = new ArrayList<>();
+        for (Activity A : activities) {
+            tmp.add(A.getActivityName());
+        }
+        return tmp;
+    }
 }
