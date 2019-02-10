@@ -5,6 +5,8 @@
 package programFunctions;
 import storageStucture.ActivityList;
 import java.io.*;
+import java.util.ArrayList;
+
 public class FileHandler {
     /**
      * Constructor with no arguments
@@ -67,5 +69,32 @@ public class FileHandler {
         /*Delete the file*/
         file.delete();
         /*Return*/
+    }
+    /**Function definition for searchListFolder()
+     * <p>
+     *     Searches a folder for all items within the folder,
+     *     and adds the names of the files to a List to be returned.
+     * </p>
+     * @return the list of file names
+     */
+    public ArrayList<String> searchListFolder() {
+        /*Create a List*/
+        ArrayList<String> series = new ArrayList<>();
+        /*Open the folder*/
+        File folder = new File("List/");
+        /*Create a list of all files in the folder*/
+        File[] fileList = folder.listFiles();
+        if(fileList != null) {
+            /*For all files in the list*/
+            for (File aFileList : fileList) {
+                /*If the item is a file*/
+                if (aFileList.isFile()) {
+                    /*Add the name to the list*/
+                    series.add(aFileList.getName().replace(".ser", ""));
+                }
+            }
+        }
+        /*Return users*/
+        return series;
     }
 }
