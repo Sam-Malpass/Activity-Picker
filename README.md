@@ -1,2 +1,2 @@
 # Activity-Picker
-Team Jam's Activity Picker, selects a random activity to do from a list of possible activities input by the user.
+My girlfriend can never decide what she wants to do so I made this to speed up the process.
